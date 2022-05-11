@@ -1,0 +1,35 @@
+
+    
+
+<div class="shadow-lg p-3 mb-5  rounded  container fixed-top" style="background-color: rgb(70, 67, 67);" >
+    <h4 style="color: white;"># &nbsp; Simplilearn Tech Box</h4>
+  </div>
+  <br><br><br><br>
+  <div class="container message-container">
+    
+  <div *ngFor="let message of data" class="container-fluid" class="card w-50 text-white mb-3 rounded"   style="max-width: 18rem;" style="background-color: #36393F;">
+    <div class="card-body">
+      <h5 class="card-title" style="color: orangered;">{{message.name}}</h5>
+      <p class="card-text" style="color: white;">{{message.message}} </p>
+    </div>
+  </div>
+
+  <div *ngFor="let message of messageList" class="container-fluid" class="card w-50 text-white mb-3 rounded"   style="max-width: 18rem;" style="background-color: #36393F;">
+    <div class="card-body">
+      <h5 class="card-title" style="color: orangered;">{{message.name}}</h5>
+      <p class="card-text" style="color: white;">{{message.message}} </p>
+    </div>
+  </div>
+
+  </div>
+    
+  <div  class="fixed-bottom container mb-3" style="background-color: #36393F">
+  <div class="row">
+    <div class="col-8">
+      <input type="text" class="form-control" placeholder="Enter Your Message To Send In #Simplilearn Tech Box" id="exampleInputEmail1"  aria-describedby="emailHelp"  [(ngModel)]="newMessage">
+    </div>
+    <div class="col-4">
+      <button type="button" class="btn btn-warning" (click)="sendMessage()"> &nbsp; &nbsp;Send &nbsp; &nbsp; </button>
+    </div>
+  </div>
+  </div>

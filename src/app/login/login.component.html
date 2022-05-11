@@ -1,0 +1,23 @@
+
+<br> 
+<div class="container bg-light py-5">
+    <h1 class="text-center">Welcome to <span style="color: orange;">Simpli</span><span style="color: rgb(18, 155, 235);">learn</span></h1>
+    <h2 class="text-center">Chat App</h2>
+    <br>
+    <p>We're all in this together to create a welcoming environment. Let's treat everyone with respect. Healthy debates are natural, but kindness is required.</p>
+    <p>Make sure everyone feels safe. Bullying of any kind isn't allowed, and degrading comments about things like race, religion, culture, sexual orientation, gender or identity will not be tolerated.
+    </p>
+    <p>Give more than you take to this group. Self-promotion, spam and irrelevant links aren't allowed.</p>
+    <p>Being part of this group requires mutual trust. Authentic, expressive discussions make groups great, but may also be sensitive and private. What's shared in the group should stay in the group.</p>
+
+    <ng-container *ngIf="!isshow">
+        <div class="form-group">
+            <!-- <label class="text-center"><h4>Enter Your Registered Mail Id </h4></label> -->
+            <h3 class="text-center">Enter Your name To Chat </h3>
+            <input #name type="text" class="form-control"  placeholder="Enter Your Name Here To Chat " required>
+            </div>
+        </ng-container>
+    <br>
+    <button  class="btn btn-primary " routerLink="/chat" (click)="startchat()" >Join ChatRoom</button>
+
+</div>
